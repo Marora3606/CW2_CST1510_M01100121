@@ -1,0 +1,21 @@
+# Sensitive files
+api key.py
+.env
+
+# Database files
+*.db
+DATA/*.db
+
+# Cache
+__pycache__/
+*.pyc
+
+# OS files
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+*.log

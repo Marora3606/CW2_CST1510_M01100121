@@ -1,0 +1,23 @@
+# Sensitive files
+.env
+"api key.py"
+
+# Database files
+*.db
+DATA/*.db
+Week*/DATA/*.db
+Week*/WEEK*/DATA/*.db
+
+# Cache
+__pycache__/
+*.pyc
+
+# OS files
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+*.log
