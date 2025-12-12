@@ -84,16 +84,6 @@ with st.sidebar:
         ["gpt-4o", "gpt-4o-mini"],
         index=1
     )
-    
-    # Temperature slider
-    temperature = st.slider(
-        "Temperature",
-        min_value=0.0,
-        max_value=2.0,
-        value=1.0,
-        step=0.1,
-        help="Higher values make output more random"
-    )
 
 # Display all previous messages
 for message in st.session_state.messages:
@@ -124,7 +114,6 @@ if prompt:
         completion = client.chat.completions.create(
             model=model,
             messages=messages_with_system,
-            temperature=temperature,
             stream=True
         )
     
