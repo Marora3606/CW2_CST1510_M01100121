@@ -163,8 +163,7 @@ try:
                     messages=[
                         {"role": "system", "content": system_prompt},
                         {"role": "user", "content": user_prompt}
-                    ],
-                    temperature=0.7
+                    ]
                 )
                 st.success("Analysis Complete!")
                 st.markdown(response.choices[0].message.content)
