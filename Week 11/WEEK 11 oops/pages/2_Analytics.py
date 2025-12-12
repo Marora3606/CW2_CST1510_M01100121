@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 from pathlib import Path
-from app.data.db import connect_database
+from database.db import connect_database
 from openai import OpenAI
 
 st.set_page_config(page_title="Analytics & Reporting", layout="wide")

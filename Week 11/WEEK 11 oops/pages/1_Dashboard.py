@@ -2,8 +2,8 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 from pathlib import Path
-from app.data.db import connect_database
-from app.data.schema import create_all_tables
+from database.db import connect_database
+from models.schema import create_all_tables
 
 st.set_page_config(page_title="Dashboard", page_icon="shield", layout="wide")
 
@@ -49,7 +49,7 @@ def load_csv():
     conn.close()
 
 try:
-    from app.data.incidents import get_all_incidents
+    from models.incidents import get_all_incidents
     conn = connect_database()
     create_all_tables(conn)
     conn.close()

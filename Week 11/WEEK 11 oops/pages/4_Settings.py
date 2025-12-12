@@ -1,6 +1,6 @@
 import streamlit as st
 import bcrypt
-from app.data.db import connect_database
+from database.db import connect_database
 
 st.set_page_config(page_title="Settings", layout="wide")
 
